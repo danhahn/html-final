@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title Spring 2015 HTML
+		block css
+			link(rel='stylesheet', href='css/global.css')
+	body
+		#page		
+			header.global-header
+				form
+					input(type="text")
+					button submit
+				h1 New York State
+				p.tagline The Empire State
+			nav.global-nav
+				include ../components/nav.jade
+			section.content-area
+				article.main-content
+					block content
+				aside.secondary-contnet
+					.info
+						block side
+			footer.global-footer
+				p &copy; 2015 SVA HTML
+					a(href="http://www.svahtml.com")

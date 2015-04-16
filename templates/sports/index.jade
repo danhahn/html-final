@@ -1,0 +1,14 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Sports"
+	- var path = "../"
+
+block css
+	link(rel='stylesheet', href='../css/global.css')
+
+block content
+	include ../../html/md/sports.html
+
+block side
+	include ../../html/md/sports-side.html

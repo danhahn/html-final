@@ -1,0 +1,15 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "History"
+	- var path = "../"
+
+block css
+	link(rel='stylesheet', href='../css/global.css')
+
+block content
+	include ../../html/md/history.html
+
+
+block side
+	include ../../html/md/history-side.html

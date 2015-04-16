@@ -1,0 +1,14 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Transportation"
+	- var path = "../"
+
+block css
+	link(rel='stylesheet', href='../css/global.css')
+
+block content
+	include ../../html/md/transportation.html
+
+block side
+	include ../../html/md/trans-side.html

@@ -1,0 +1,14 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Major cities"
+	- var path = "../"
+
+block css
+	link(rel='stylesheet', href='../css/global.css')
+
+block content
+	include ../../html/md/majorCities.html
+
+block side
+	include ../../html/md/major-side.html
