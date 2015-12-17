@@ -1,10 +1,10 @@
-##History
+## History
 
-###17th century
+### 17th century
 
 Henry Hudson's 1609 voyage marked the beginning of European involvement with the area. Sailing for the Dutch East India Company and looking for a passage to Asia, he entered the Upper New York Bay on September 11 of that year. After his return word of his findings quickly spread and Dutch merchants began to explore the coast in search for profitable fur trade. During the 17th century, Dutch trading posts established for the trade of pelts from the Lenape, Iroquois, and other indigenous peoples expanded into the colony of New Netherland. The first of these trading posts were Fort Nassau (1614, near present-day Albany); Fort Orange (1624, on the Hudson River just south of the current city of Albany and created to replace Fort Nassau), developing into settlement Beverwijck (1647), and into what became Albany; Fort Amsterdam (1625, to develop into the town New Amsterdam which is present-day New York City); and Esopus, (1653, now Kingston). The success of the patroonship of Rensselaerswyck (1630), which surrounded Albany and lasted until the mid 19th century, was also a key factor in the early success of the colony. The English captured the colony during the Second Anglo-Dutch War and governed it as the Province of New York. The city of New York was recaptured by the Dutch once again in 1673 during the Third Anglo-Dutch War (1672–1674) and renamed New Orange, but returned to the English under the terms of the Treaty of Westminster a year later.
 
-###American Revolution
+### American Revolution
 The Sons of Liberty were organized in New York City during the 1760s, largely in response to the oppressive Stamp Act passed by the British Parliament in 1765. The Stamp Act Congress met in the city on October 19 of that year, composed of representatives from across the Thirteen Colonies who set the stage for the Continental Congress to follow. The Stamp Act Congress resulted in the Declaration of Rights and Grievances, which was the first written expression by representatives of the Americans of many of the rights and complaints later expressed in the United States Declaration of Independence, including the right to representative government.
 
 <div class="photo-right">
@@ -17,12 +17,6 @@ The Capture of Fort Ticonderoga provided the cannon and gunpowder necessary to f
 New York endorsed the Declaration of Independence on July 9, 1776. The New York State constitution was framed by a convention which assembled at White Plains on July 10, 1776, and after repeated adjournments and changes of location, terminated its labors at Kingston on Sunday evening, April 20, 1777, when the new constitution drafted by John Jay was adopted with but one dissenting vote. It was not submitted to the people for ratification. On July 30, 1777, George Clinton was inaugurated as the first Governor of New York at Kingston.
 
 The first major battle of the American Revolutionary War after independence was declared—and the largest battle of the entire war—was fought in New York at the Battle of Long Island (a.k.a. Battle of Brooklyn) in August 1776. British victory made New York City their military and political base of operations in North America for the duration of the conflict, and consequently the center of attention for General George Washington's intelligence network.
-
-The notorious British prison ships of Wallabout Bay saw more American combatants die of intentional neglect than were killed in combat in every battle of the war, combined.
-
-The first of two major British armies were captured by the Continental Army at the Battle of Saratoga in 1777, influencing France to ally with the revolutionaries.
-
-In an attempt to retain their sovereignty and remain an independent nation positioned between the new United States and British North America, four of the Iroquois Nations fought on the side of the British; only the Oneidas and their dependents the Tuscaroras allied themselves to the Americans. The Sullivan Expedition of 1778 and 1779 destroyed nearly 50 Iroquois villages and adjacent croplands, forcing many refugees to British-held Niagara. As allies of the British, the Iroquois were resettled in Canada after the war. In the treaty settlement, the British ceded most Indian lands to the new United States. Because New York made treaty with the Iroquois without getting Congressional approval, some of the land purchases are the subject of modern-day claims by the individual tribes. More than 5 million acres (20,000 km2) of former Iroquois territory was put up for sale in the years after the Revolutionary War, leading to rapid development in upstate New York. As per the Treaty of Paris, the last vestige of British authority in the former Thirteen Colonies—their troops in New York City—departed in 1783, which was long afterwards celebrated as Evacuation Day.
 
 <div class="photo-left">
 	<img src="../images/history2.jpg" alt="">

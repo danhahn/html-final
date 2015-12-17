@@ -1,4 +1,4 @@
-##New York
+## New York
 
 New York is a state in the Northeastern and Mid-Atlantic regions of the [United States](http://www.whitehouse.gov). New York is the 27th-most extensive, the third-most populous, and the seventh-most densely populated of the 50 United States. New York is bordered by New Jersey and Pennsylvania to the south and by Connecticut, Massachusetts, and Vermont to the east. The state has a maritime border with Rhode Island east of Long Island, as well as an international border with the Canadian provinces of Quebec to the north and Ontario to the west and north. The state of New York is often referred to as New York State to distinguish it from New York City, its largest city.
 

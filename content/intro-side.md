@@ -1,8 +1,9 @@
-##Governor	
+## Governor
 Andrew Cuomo (D)
-##Lieutenant Governor	
+## Lieutenant Governor
 Robert Duffy (D)
 
-##Population
+## Population
+
  * Total - 19,651,127
  * Density - 416.42/sq mi

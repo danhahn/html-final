@@ -1,19 +1,17 @@
 doctype html
 html
 	head
-		title Spring 2015 HTML
+		title Fall 2015 HTML -- SVA 
 		block css
 			link(rel='stylesheet', href='css/global.css')
 	body
-		#page		
-			header.global-header
-				form
-					input(type="text")
-					button submit
-				h1 New York State
-				p.tagline The Empire State
+		.container		
 			nav.global-nav
 				include ../components/nav.jade
+				
+			header.global-header					
+				h1 New York State
+				p.tagline The Empire State				
 			section.content-area
 				article.main-content
 					block content

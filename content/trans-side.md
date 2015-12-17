@@ -1,5 +1,4 @@
-##Bridges
-###New York City
+## New York City Bridges
 
 * George Washington Bridge
 * Verrazano-Narrows Bridge
@@ -10,9 +9,3 @@
 * Triborough Bridge
 * Bronx-Whitestone Bridge
 * Throgs Neck Bridge
-
-###Elsewhere in New York State
-
-* Tappan Zee Bridge
-* Peace Bridge
-* Lake Champlain Bridge.
