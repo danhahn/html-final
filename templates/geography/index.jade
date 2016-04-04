@@ -2,13 +2,12 @@ extends ../../components/layout.jade
 
 block nav
 	- var nav = "Geography"
+
+block path
 	- var path = "../"
 
-block css
-	link(rel='stylesheet', href='../css/global.css')
-
 block content
-	include ../../html/md/geography.html
+	include:markdown ../../content/geography.md
 
-block side
-	include ../../html/md/geo-side.html
+block side	
+	include:markdown ../../content/geo-side.md

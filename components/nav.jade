@@ -1,10 +1,10 @@
 - var navItems = {'Home': 'index.html', 'History': 'history/index.html', 'Geography' : 'geography/index.html', 'Major cities' : 'cities/index.html', 'Demographics' : 'demographics/index.html', 'Transportation' : 'transportation/index.html', 'Sports' : 'sports/index.html'}
 
+block path
+	if path != '../'
+		-path = ""
+
 block nav
-
-if path != '../'
-	-path = ""
-
 ul
 	each index, val in navItems
 		if nav == val
@@ -12,7 +12,7 @@ ul
 				a(href= path + index, class='active')= val
 		else
 			li
-				a(href= path +index)= val
+				a(href= path + index)= val
 
 			
 			

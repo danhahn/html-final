@@ -2,13 +2,12 @@ extends ../../components/layout.jade
 
 block nav
 	- var nav = "Demographics"
+
+block path
 	- var path = "../"
 
-block css
-	link(rel='stylesheet', href='../css/global.css')
-
 block content
-	include ../../html/md/demo.html
+	include:markdown ../../content/demo.md
 
 block side
-	include ../../html/md/demo-side.html
+	include:markdown ../../content/demo-side.md

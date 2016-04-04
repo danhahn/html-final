@@ -2,13 +2,12 @@ extends ../../components/layout.jade
 
 block nav
 	- var nav = "Transportation"
+
+block path
 	- var path = "../"
 
-block css
-	link(rel='stylesheet', href='../css/global.css')
-
 block content
-	include ../../html/md/transportation.html
+	include:markdown ../../content/transportation.md
 
 block side
-	include ../../html/md/trans-side.html
+	include:markdown ../../content/trans-side.md

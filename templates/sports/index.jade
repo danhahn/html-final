@@ -2,13 +2,12 @@ extends ../../components/layout.jade
 
 block nav
 	- var nav = "Sports"
+
+block path
 	- var path = "../"
 
-block css
-	link(rel='stylesheet', href='../css/global.css')
-
 block content
-	include ../../html/md/sports.html
+	include:markdown ../../content/sports.md
 
 block side
-	include ../../html/md/sports-side.html
+	include:markdown ../../content/sports-side.md

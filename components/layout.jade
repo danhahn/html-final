@@ -1,15 +1,17 @@
+block path
+	if path != '../'
+		-path = ""
+
 doctype html
 html
 	head
-		title Fall 2015 HTML -- SVA 
-		block css
-			link(rel='stylesheet', href='css/global.css')
+		title Spring 2016 HTML -- SVA 		
+		link(rel='stylesheet', href=path+'css/global.css')
 	body
-		.container		
+		.container 		
 			nav.global-nav
-				include ../components/nav.jade
-				
-			header.global-header					
+				include ../components/nav.jade				
+			header.global-header 					
 				h1 New York State
 				p.tagline The Empire State				
 			section.content-area
