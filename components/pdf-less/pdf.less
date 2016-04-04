@@ -1,0 +1,39 @@
+body {
+	font: 12px arial;
+}
+
+a {
+	color: teal;
+}
+
+h2 {
+	page-break-before: always;
+}
+
+[class*="photo"] {
+	border: 1px solid gray;
+	padding: 1em;
+	font-size: 8px;
+	text-align: center;
+	&:before, &:after {
+		content: 'Add this photo and caption here';
+		display: block;
+		text-align: center;
+		font-style: italic;
+	}
+}
+
+p {
+	line-height: 1.3em;
+	margin: 1em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	width: 100%;
+	td, th {
+		border: 1px solid gray;
+		padding: 10px;
+	}
+}
