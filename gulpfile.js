@@ -6,17 +6,34 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
 	less = require('gulp-less');
 
+var replace = require('gulp-replace');
+var prettify = require('gulp-prettify');
+
 var lessFiles = ['components/less/*.less'];
 var jadeSource = ['./components/*.jade'];
 var jadeFiles = ['./templates/*.jade', "./templates/**/*.jade"];
 var markdownFiles = ['./content/*.md'];
-var htmlSourcse = ["./builds/*.html"];
+var htmlSourcse = ["./builds/*/*.html"];
 var imgSouce = ['./images/*'];
 
 gulp.task('images', function() {
 	gulp.src(imgSouce)
 	.pipe(gulp.dest('builds/images'))
 	.pipe(notify({ message: 'Images Coppied Over' }));
+});
+
+gulp.task('replace', function() {
+	gulp.src(htmlSourcse)
+	.pipe(replace(/(<h[1,2,3]) id="[a-z\-]*">/g, '$1>'))
+	.pipe(replace(/(The Empire State)\s*/g, '$1'))
+	.pipe(replace(/(css".)\s*\</g, '$1\n\t<'))
+	.pipe(gulp.dest('builds'));
+});
+
+gulp.task('format', function() {
+  gulp.src('builds/*/*.html')
+    .pipe(prettify({indent_size: 4}))
+    .pipe(gulp.dest('builds'))
 });
 
 gulp.task('less', function() {
