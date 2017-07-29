@@ -1,0 +1,10 @@
+extends ../components/layout.jade
+
+block nav
+	- var nav = "Home";
+
+block content
+	include:markdown ../content/intro.md
+
+block side
+	include:markdown ../content/intro-side.md

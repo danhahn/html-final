@@ -1,0 +1,25 @@
+block path
+	if path != '../'
+		-path = ""
+
+doctype html
+html
+	head
+		title Spring 2016 HTML -- SVA 		
+		link(rel='stylesheet', href=path+'css/global.css')
+	body
+		.container 		
+			nav.global-nav
+				include ../components/nav.jade				
+			header.global-header 					
+				h1 New York State
+				p.tagline The Empire State				
+			section.content-area
+				article.main-content
+					block content
+				aside.secondary-contnet
+					.info
+						block side
+			footer.global-footer
+				p &copy; 2015 SVA HTML
+					a(href="http://www.svahtml.com")

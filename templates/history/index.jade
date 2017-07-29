@@ -1,0 +1,14 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "History"
+
+block path
+	- var path = "../"
+
+block content
+	include:markdown ../../content/history.md
+
+
+block side
+	include:markdown ../../content/history-side.md
