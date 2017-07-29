@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 var replace = require('gulp-replace');
 var prettify = require('gulp-prettify');
 var markdownpdf = require('gulp-markdown-pdf');
+var imageResize = require('gulp-image-resize');
 
 var lessFiles = ['components/less/*.less'];
 var jadeSource = ['./components/*.jade'];
@@ -16,6 +17,18 @@ var jadeFiles = ['./templates/*.jade', "./templates/**/*.jade"];
 var markdownFiles = ['./content/*.md'];
 var htmlSourcse = ["./builds/*/*.html"];
 var imgSouce = ['./images/*'];
+
+gulp.task('screenshots', function () {
+  gulp.src(['./dist/pages/*.png'])
+    .pipe(imageResize({
+      width : 200,
+      height : 200,
+      crop : true,
+      upscale : false,
+			gravity: 'north'
+    }))
+    .pipe(gulp.dest('./dist/pages/sm/'));
+});
 
 gulp.task('images', function() {
 	gulp.src(imgSouce)
@@ -37,19 +50,19 @@ gulp.task('pdf', ['pdf-less'], () => {
 		.pipe(gulp.dest('dist'));
 });
 
-// gulp.task('replace', function() {
-// 	gulp.src(htmlSourcse)
-// 	.pipe(replace(/(<h[1,2,3]) id="[a-z\-]*">/g, '$1>'))
-// 	.pipe(replace(/(The Empire State)\s*/g, '$1'))
-// 	.pipe(replace(/(css".)\s*\</g, '$1\n\t<'))
-// 	.pipe(gulp.dest('builds'));
-// });
-//
-// gulp.task('format', function() {
-//   gulp.src('builds/*/*.html')
-//     .pipe(prettify({indent_size: 4}))
-//     .pipe(gulp.dest('builds'))
-// });
+gulp.task('replace', function() {
+	gulp.src(htmlSourcse)
+	.pipe(replace(/(<h[1,2,3]) id="[a-z\-]*">/g, '$1>'))
+	.pipe(replace(/(The Empire State)\s*/g, '$1'))
+	.pipe(replace(/(css".)\s*\</g, '$1\n\t<'))
+	.pipe(gulp.dest('builds'));
+});
+
+gulp.task('format', function() {
+  gulp.src('builds/*/*.html')
+    .pipe(prettify({indent_size: 4}))
+    .pipe(gulp.dest('builds'))
+});
 
 gulp.task('less', () => {
 	gulp.src(lessFiles)
