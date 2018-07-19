@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 	markdown = require('gulp-markdown'),
   jade = require('gulp-jade'),
   notify = require('gulp-notify'),
-  prettify = require('gulp-html-prettify'),
   connect = require('gulp-connect'),
 	less = require('gulp-less');
 

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
 
 @color0: rgb( 80, 183, 241 );
 @color1: rgb( 255, 225, 26 );
@@ -13,6 +13,9 @@
 @main: 750px;
 @side: @total - @main;
 
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font: 16px arial;
@@ -32,49 +35,29 @@ a {
 }
 
 .container {
-	width: @total;
+	max-width: @total;
 	margin: 10px auto;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, .5);
 }
 
 .global-header {
-	padding: 20px;
+	padding: 1em;
 	background-color: @color0;
-	background: url(../images/header.png) center ;
+	background: url(../images/header.png) center;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	h1 {
 		font-family: 'Montserrat', sans-serif;
-		font-size: 60px;
+		font-size: 4em;
 		color: @color1;
 		letter-spacing: -1px;
 	}
 	.tagline {
-		font-size: 20px;
+		font-size: 1.5em;
 		font-family: 'Homemade Apple', cursive;
 		color: white;
-	}
-	form {
-		background-color: @color2;
-		float: right;
-		padding: 5px;
-		margin: 5px;
-		border-bottom: 2px #c0c0c0;
-		border-left: 2px #c0c0c0;
-		border-radius: 10px;
-		input {
-			width: 120px;
-			border: 2px solid #c0c0c0;
-			padding: 5px;
-			border-radius: 5px
-		}
-		button {
-			background: @color1;
-			color: #ffffff;
-			padding: 6px 15px;
-			text-transform: uppercase;
-			font-weight: bold;
-			border: none;
-			border-radius: 5px;
-		}
 	}
 }
 
@@ -106,26 +89,22 @@ a {
 }
 
 .content-area {
-	&:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	background: @color2;
+	display: flex;
 }
 
-.main-content, .secondary-contnet {
-	float: left;
+@media screen and (max-width: 510px) {
+	.content-area {
+		flex-direction: column;
+	}
 }
 
 .main-content {
-	box-sizing: border-box;
-	width: @main;
-	padding: 20px;
+	flex: 1;
+	padding: 1em;
 	background: url(../images/ny-seal.png) no-repeat center 200px #ffffff;
 
 	h2 {
-		font-size: 45px;
+		font-size: 2em;
 		color: @color0;
 	}
 
@@ -172,10 +151,10 @@ table {
 
 .photo-right {
 	float: right;
-	margin-left: 10px;
+	margin-left: 1em;
 	background-color: #ffffff;
 	border: 1px solid @gray;
-	padding: 10px;
+	padding: 1em;
 	p {
 		margin: 0;
 		text-align: center;
@@ -184,10 +163,10 @@ table {
 
 .photo-left {
 	float: left;
-	margin-right: 10px;
+	margin-right: 1em;
 	border: 1px solid @gray;
 	background-color: #ffffff;
-	padding: 10px;
+	padding: 1em;
 	p {
 		margin: 0;
 		text-align: center;
@@ -195,12 +174,14 @@ table {
 }
 
 .secondary-contnet {
-	width: @side;
+	flex: 0 1 @side;
+	background: @color2;
+
 	.info {
 		font-size: 14px;
 		background-color: #ffffff;
-		padding: 20px;
-		margin: 20px;
+		padding: 1em;
+		margin: 1em;
 		border-radius: 10px;
 		h2 {
 			font-size: 18px;
