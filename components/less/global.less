@@ -1,11 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
-
-@color0: rgb( 80, 183, 241 );
-@color1: rgb( 255, 225, 26 );
-@color2: rgb( 0, 67, 88 );
-@color3: rgb( 190, 219, 57 );
-@color4: rgb( 31, 138, 112 );
-@color5: rgb( 253, 116, 0 );
+@color0: #50b7f1;
+@color1: #ffe11a;
+@color2: #004358;
+@color3: #bedb39;
+@color4: #1f8a70;
+@color5: #fd7400;
 
 @gray: #b7b7b7;
 
@@ -101,7 +99,7 @@ a {
 .main-content {
 	flex: 1;
 	padding: 1em;
-	background: url(../images/ny-seal.png) no-repeat center 200px #ffffff;
+	background: url(../images/ny-seal.png) no-repeat center 100px #ffffff;
 
 	h2 {
 		font-size: 2em;
@@ -149,9 +147,7 @@ table {
 	}
 }
 
-.photo-right {
-	float: right;
-	margin-left: 1em;
+.photo {
 	background-color: #ffffff;
 	border: 1px solid @gray;
 	padding: 1em;
@@ -159,17 +155,10 @@ table {
 		margin: 0;
 		text-align: center;
 	}
-}
 
-.photo-left {
-	float: left;
-	margin-right: 1em;
-	border: 1px solid @gray;
-	background-color: #ffffff;
-	padding: 1em;
-	p {
-		margin: 0;
-		text-align: center;
+	img {
+		display: block;
+		max-width: 100%;
 	}
 }
 

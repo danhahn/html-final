@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 16px arial;
+  margin: 0;
+  background-color: #c0c0c0;
+  color: #333333;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #004358;
+}
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+.global-header {
+  padding: 1em;
+  background-color: #50b7f1;
+  background: url(../images/header.png) center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.global-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: #ffe11a;
+  letter-spacing: -1px;
+}
+.global-header .tagline {
+  font-size: 1.5em;
+  font-family: 'Homemade Apple', cursive;
+  color: white;
+}
+.global-nav {
+  background: #ffe11a;
+}
+.global-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.global-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav li {
+  float: left;
+}
+.global-nav a {
+  font-size: 15px;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+.global-nav a:hover,
+.global-nav a.active {
+  background-color: #ff951a;
+}
+.content-area {
+  display: flex;
+}
+@media screen and (max-width: 510px) {
+  .content-area {
+    flex-direction: column;
+  }
+}
+.main-content {
+  flex: 1;
+  padding: 1em;
+  background: url(../images/ny-seal.png) no-repeat center 100px #ffffff;
+}
+.main-content h2 {
+  font-size: 2em;
+  color: #50b7f1;
+}
+.main-content h3 {
+  color: #004358;
+  font-size: 20px;
+  border-bottom: 1px solid #b7b7b7;
+  padding-bottom: 5px;
+  margin: 30px 0 10px;
+}
+.main-content p {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+.main-content ul {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+.main-content ul li {
+  margin: 5px 0;
+  line-height: 1.5em;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid #b7b7b7;
+  width: 100%;
+}
+table th,
+table td {
+  padding: 5px 10px;
+  border: 1px solid #b7b7b7;
+}
+table th {
+  background-color: #50b7f1;
+  text-align: left;
+  color: white;
+}
+.photo {
+  background-color: #ffffff;
+  border: 1px solid #b7b7b7;
+  padding: 1em;
+}
+.photo p {
+  margin: 0;
+  text-align: center;
+}
+.photo img {
+  display: block;
+  max-width: 100%;
+}
+.secondary-contnet {
+  flex: 0 1 250px;
+  background: #004358;
+}
+.secondary-contnet .info {
+  font-size: 14px;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+}
+.secondary-contnet .info h2 {
+  font-size: 18px;
+  color: #50b7f1;
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+}
+.secondary-contnet .info p {
+  margin: 5px 0;
+}
+.secondary-contnet .info ul {
+  margin: 10px;
+  padding-left: 12px;
+}
+.global-footer {
+  border-top: 2px solid black;
+  background-color: #7fcaf5;
+  padding: 20px;
+  text-align: right;
+  color: white;
+}

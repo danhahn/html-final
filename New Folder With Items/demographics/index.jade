@@ -1,0 +1,13 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Demographics"
+
+block path
+	- var path = "../"
+
+block content
+	include:markdown ../../content/demo.md
+
+block side
+	include:markdown ../../content/demo-side.md

@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 var replace = require('gulp-replace');
 var prettify = require('gulp-prettify');
 var markdownpdf = require('gulp-markdown-pdf');
+var rename = require("gulp-rename");
 
 var lessFiles = ['components/less/*.less'];
 var jadeSource = ['./components/*.jade'];
@@ -33,6 +34,9 @@ gulp.task('pdf', ['pdf-less'], () => {
 		.pipe(markdownpdf({
 			cssPath: './dist/css/pdf.css'
 		}))
+		.pipe(rename(function (path) {
+	    path.extname = ".pdf";
+	  }))
 		.pipe(gulp.dest('dist'));
 });
 

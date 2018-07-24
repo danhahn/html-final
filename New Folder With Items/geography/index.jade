@@ -1,0 +1,13 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Geography"
+
+block path
+	- var path = "../"
+
+block content
+	include:markdown ../../content/geography.md
+
+block side	
+	include:markdown ../../content/geo-side.md
