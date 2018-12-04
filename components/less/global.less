@@ -147,10 +147,11 @@ table {
 	}
 }
 
-.photo {
+.photo-left,
+.photo-right {
 	background-color: #ffffff;
 	border: 1px solid @gray;
-	padding: 1em;
+	padding: .5em;
 	p {
 		margin: 0;
 		text-align: center;
@@ -160,6 +161,15 @@ table {
 		display: block;
 		max-width: 100%;
 	}
+}
+
+.photo-left {
+	float: left;
+	margin-right: 1em;
+}
+.photo-right {
+	float: right;
+	margin-left: 1em;
 }
 
 .secondary-contnet {

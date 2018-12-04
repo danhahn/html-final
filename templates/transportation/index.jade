@@ -1,0 +1,13 @@
+extends ../../components/layout.jade
+
+block nav
+	- var nav = "Transportation"
+
+block path
+	- var path = "../"
+
+block content
+	include:markdown ../../content/transportation.md
+
+block side
+	include:markdown ../../content/trans-side.md
