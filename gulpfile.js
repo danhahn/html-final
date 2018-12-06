@@ -16,11 +16,18 @@ var jadeFiles = ['./templates/*.jade', "./templates/**/*.jade"];
 var markdownFiles = ['./content/*.md'];
 var htmlSourcse = ["./builds/*/*.html"];
 var imgSouce = ['./images/*'];
+const localJs = ['./components/js/*'];
 
 gulp.task('images', function() {
 	gulp.src(imgSouce)
 	.pipe(gulp.dest('builds/images'))
-	.pipe(notify({ message: 'Images Coppied Over' }));
+	.pipe(notify({ message: 'Images Copied Over' }));
+});
+
+gulp.task('js', function() {
+	gulp.src(localJs)
+		.pipe(gulp.dest('builds/js'))
+		.pipe(notify({ message: 'js Copied Over' }));
 });
 
 gulp.task('pdf-less', () => {
@@ -109,7 +116,8 @@ gulp.task('watch', () => {
 	gulp.watch(jadeSource, ['jade']);
 	gulp.watch(markdownFiles, ['jade']);
 	gulp.watch(imgSouce, ['images']);
+	gulp.watch(localJs, ['js']);
 	gulp.watch(['./content/final-content.md', './components/pdf-less/pdf.less'], ['pdf']);
 });
 
-gulp.task('default', ['images', 'jade', 'connect', 'watch']);
+gulp.task('default', ['images', 'js', 'jade', 'connect', 'watch']);
