@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "gulp-rename": "^1.4.0",
-    "marked": "^0.5.2"
+    "marked": "^0.7.0"
   }
 }
